@@ -55,4 +55,4 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 
 
-carInfo(inventory,33);
+carInfo(inventory);
