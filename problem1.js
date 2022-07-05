@@ -1,4 +1,4 @@
-let carInfo= function (inventory){
+function carInfo(inventory){
     for(let i=0;i<inventory.length;i++)
     {
         if(inventory[i]['id'] === 33)
