@@ -1,19 +1,17 @@
 function carModelAlphabatically(inventory){
-
-    inventory.sort(function(a, b) {
-          let data1 = a['car_model'].toLowerCase(); 
-          let data2 = b['car_model'].toLowerCase();
-          if (data1 < data2) {
-            return -1;
-          }
-          if (data1 > data2) {
-            return 1;
-          }
-          return 0;
-      });
-      console.log(inventory)
-  
+  if((inventory.length!==undefined) && (inventory!==0)){
+      let models = []
+      for(let i=0; i<inventory.length; i++){
+          models.push(inventory[i].car_model)
+      }
+      let sortedData = models.sort()
+      console.log(sortedData);
   }
-  module.exports = carModelAlphabatically;
+  else{
+      return []
+  }
+  
+}
+module.exports = carModelAlphabatically;
   
   
