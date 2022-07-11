@@ -57,15 +57,6 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 
 let id=33;
 
-const res=carInfo(inventory,id);
-if(res===false){
-    console.log("Please pass appropriate Data..")
-}
-else if(res.length!=0){
-    console.log(`Car ${res.id} is a ${res.car_year} ${res.car_make} ${res.car_model}`);
+const res=carInfo(inventory, id);
 
-}
-else{
-    console.log(res);
-}
-
+console.log(res);
