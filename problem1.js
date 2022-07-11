@@ -1,8 +1,8 @@
 function carInfo(inventory, Id){
    
-    if((Array.isArray(inventory))==true){
+    if((Array.isArray(inventory))===true){
         
-        if(((inventory==undefined)&&(Id==undefined))||(Id==undefined)) {
+        if(((inventory===undefined)&&(Id===undefined))||(Id===undefined)||(inventory.length===0)||typeof(Id)!=="number") {
     
             return [];
         }
@@ -17,10 +17,12 @@ function carInfo(inventory, Id){
         } 
     }
     else{
-        return false;
+        return [];
      }
  
 }
  module.exports = carInfo;
+
+
 
 
